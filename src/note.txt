@@ -1,0 +1,6 @@
+sx={{ bgcolor: "#f5f5f5" }}
+text-gray-400
+text-slate-50
+RestaurantCard=> restaurant details
+EventCards=> discount details
+Navbar=> login functionality redirect to auth.jsx

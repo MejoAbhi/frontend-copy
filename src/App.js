@@ -1,24 +1,30 @@
 import logo from './logo.svg';
 import './App.css';
+import { CssBaseline, ThemeProvider } from '@mui/material';
+
+import { Navbar } from './componants/navbar/Navbar';
+import { Home } from './componants/Home/Home';
+import { DarkTheme } from './theme/DarkTheme';
+import RestaurantDetails from './componants/restaurant/RestaurantDetails';
+import Cart from './componants/cart/Cart';
+import Profile from './componants/profile/Profile';
+import { CustomerRoute } from './routers/CustomerRoute';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{backgroundColor:'black'}}>
+      
+    <CssBaseline/>  
+      <ThemeProvider theme={DarkTheme}/>
+      {/* <Navbar/> */}
+      {/* <Home/> 
+      <RestaurantDetails/>
+      <Cart/> */}
+      {/* <Profile/> */}
+      <CustomerRoute/>
     </div>
+    
   );
 }
 
